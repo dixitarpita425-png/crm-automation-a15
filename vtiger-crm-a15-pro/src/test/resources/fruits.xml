@@ -1,0 +1,13 @@
+<suite name="s">
+	<test name="t">
+		<parameter name="un" value="mango" />
+		<parameter name="pwd" value="orange" />
+		<classes>
+			<class name="ddt_extra.GetDataFromXMLFile" >
+				<methods>
+					<include name= "fruits" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

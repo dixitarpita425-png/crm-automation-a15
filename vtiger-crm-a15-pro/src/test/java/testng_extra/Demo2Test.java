@@ -3,7 +3,7 @@ package testng_extra;
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
-public class DemoTest {
+public class Demo2Test {
 //	@Test(priority = -1)
 //	public void createCity() {
 //		System.out.println("noida");
@@ -20,7 +20,7 @@ public class DemoTest {
 //		System.out.println("Greater noida deleted");
 //	}
 	
-	@Test(groups = "smoke")
+	@Test(groups = {"reg", "smoke"})
 	public void createCity() {
 		System.out.println("noida");
 	}
@@ -30,7 +30,7 @@ public class DemoTest {
 		System.out.println("Greater noida");
 	}
 	
-	@Test(groups = "reg")
+	@Test(groups = "system")
 	public void deleteCity() {
 		System.out.println("Greater noida deleted");
 	}
